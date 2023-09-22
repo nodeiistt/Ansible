@@ -1,0 +1,16 @@
+network: band
+folder: '.band'
+daemon: bandd
+chain_id: 'laozi-mainnet'
+node_version: 'v2.5.4'
+repo: 'https://github.com/bandprotocol/chain'
+genesis: 'https://ss.nodeist.net/band/genesis.json'
+peers: '1684eeca76f7c9c9f459080b0fe77c7fabc5534d@65.109.53.22:55886,e5a1bdebdf17911d4d719445e0db9180fa15882a@65.109.62.37:26656,360c68f66b8e165a293af3ec7677728d4eaddea0@116.202.115.248:26656,caba7ea64b42c83c57b206e3668f6cd842023d8f@51.89.97.105:26002,283718d8ff80c017df6b416c2da7cff5280c5a82@167.235.180.97:22956,15e48c03c6f08b1a0a35ea38626d27af4af43bb8@130.193.37.227:26656,14358a7f970cc0b790d9d8f24513aa11eaf6297f@65.108.238.166:22956,68984b341fbf9809a991c72cfe32fbc87553583c@35.198.219.75:26656,f3788f34cea5faf9bcc41fd2d7c4be87181e4810@13.213.122.116:26656,ba227966e96506acd5d0110af3a2d4462d96ad31@34.86.22.219:26656,da5df8a66ff704798982245d1e77b24a1f5ab02b@18.176.159.242:26656,4eb232f0d77d7120bc6a11aa7983f065f1c655d9@52.194.8.37:26656'
+custom_port_prefix: 103
+minimum_gas_price: '0uband'
+upgrade_folder: v2.5.4
+gas_params: '--fees 500uband'
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 0
