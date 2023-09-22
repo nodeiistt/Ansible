@@ -1,0 +1,20 @@
+# Need revision
+network: humans
+folder: '.humansd'
+daemon: humansd
+chain_id: humans_1089-1
+node_version: v1.0.0
+repo: https://github.com/humansdotai/humans
+binary: https://github.com/humansdotai/humans/releases/download/v1.0.0/humans_1.0.0_Linux_x86_64.tar.gz
+binary_processing: targz
+genesis: https://ss.nodeist.net/humans/genesis.json
+peers: 'f913050241ce5fd49ea3783ed21724ad05db7291@65.109.125.235:26656,5e51671241340f1d1e1409a9e0cc4474820bf782@65.109.116.151:17656,44deaab1264724b6e98ee3882dc2fe19defe033c@135.181.156.110:26656,7fe9fed5e1e07692c332ea38ff4ef5ad2ee0248c@138.201.121.185:26690,250d5926777e735519813157e444f84212fc8290@5.161.216.102:26656,93f4b883a14bac52c5a5436b0577d084ffc2c0f5@38.146.3.143:18456,7889ee17b291451155190d40426e6154be4e1abc@135.181.142.60:15608,33f4d6b3a09e5ee651b49b2f6e0eb3294a3adb86@135.181.133.120:26656'
+minimum_gas_price: '0.001aheart'
+custom_port_prefix: 108
+upgrade_folder: 'v1.0.0'
+update_website_immediately: true
+gas_params: '--fees 200aheart'
+
+# [Optional] Snapshot
+snapshot_hour: 2
+snapshot_minute: 0
