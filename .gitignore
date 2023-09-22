@@ -1,5 +1,5 @@
-inventory.ini
-inventory_testnet.ini
+inv.ini
+inv.ini
 debug.yml
 playground/
 roles/support_seed/templates/node_key.json.j2
