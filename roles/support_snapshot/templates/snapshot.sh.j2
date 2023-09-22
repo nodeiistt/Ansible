@@ -20,16 +20,16 @@ sudo service {{ network }}d stop
 mkdir -p {{ snap_dir }}/{{ network }}
 
 {% if wasm is defined and wasm == "outside" %}
-tar --exclude=wasm/wasm/cache -cf - {{ user_dir }}/{{ folder }}/data {{ user_dir }}/{{ folder }}/wasm | lz4 - "{{ snap_dir }}/{{ network }}/snapshot_latest.tar.lz4" -f
-tar --exclude=wasm/wasm/cache -cf - {{ user_dir }}/{{ folder }}/wasm | lz4 - "{{ snap_dir }}/{{ network }}/wasmonly.tar.lz4" -f
+tar --exclude=wasm/wasm/cache -cf - {{ user_dir }}/{{ folder }}/data {{ user_dir }}/{{ folder }}/wasm | lz4 - {{ snap_dir }}/{{ network }}/snapshot_latest.tar.lz4 -f
+tar --exclude=wasm/wasm/cache -cf - {{ user_dir }}/{{ folder }}/wasm | lz4 - {{ snap_dir }}/{{ network }}/wasmonly.tar.lz4 -f
 
 {% elif wasm is defined and wasm == "inside" %}
-tar --exclude=data/wasm/cache -cf - {{ user_dir }}/{{ folder }}/data | lz4 - "{{ snap_dir }}/{{ network }}/snapshot_latest.tar.lz4" -f
+tar --exclude=data/wasm/cache -cf - {{ user_dir }}/{{ folder }}/data | lz4 - {{ snap_dir }}/{{ network }}/snapshot_latest.tar.lz4 -f
 cd {{ user_dir }}/{{ folder }}/data
-tar --exclude=wasm/cache -cf - wasm | lz4 - "{{ snap_dir }}/{{ network }}/wasmonly.tar.lz4" -f
+tar --exclude=wasm/cache -cf - wasm | lz4 - {{ snap_dir }}/{{ network }}/wasmonly.tar.lz4 -f
 
 {% else %}
-tar -cf - {{ user_dir }}/{{ folder }}/data | lz4 - "{{ snap_dir }}/{{ network }}/snapshot_latest.tar.lz4" -f
+tar -cf - {{ user_dir }}/{{ folder }}/data | lz4 - {{ snap_dir }}/{{ network }}/snapshot_latest.tar.lz4 -f
 {% endif %}
 
 #Copy Genesis & addrbook
