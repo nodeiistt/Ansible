@@ -2,7 +2,7 @@
 - name: Stop node process
   become: true
   systemd:
-    name: '{{ network }}'
+    name: '{{ network }}d'
     state: stopped
     enabled: false
   ignore_errors: true
@@ -20,7 +20,7 @@
 - name: remove systemd file
   become: true
   file:
-    path: '/etc/systemd/system/{{ network }}.service'
+    path: '/etc/systemd/system/{{ network }}d.service'
     state: absent
 
 - name: remove binary from go bin
