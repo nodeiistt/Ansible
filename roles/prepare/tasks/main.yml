@@ -1,0 +1,15 @@
+---
+- meta: end_play
+  when: (prepare is defined) and (prepare|bool is false)
+
+- name: Update and upgrade the machine
+  apt:
+    upgrade: dist
+    update_cache: true
+
+- name: firewall setup
+  import_tasks: firewall.yml
+
+- name: install cosmos software
+  import_tasks: cosmos_software.yml
+  when: cosmos_software|default(true)|bool == true
