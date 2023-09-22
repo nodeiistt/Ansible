@@ -8,5 +8,5 @@ binary: https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.5/
 binary_processing: targz
 genesis: 'https://ss.nodeist.net/t/cascadia/genesis.json'
 peers: 'd5519e378247dfb61dfe90652d1fe3e2b3005a5b@65.109.68.190:15556,893b6d4be8b527b0eb1ab4c1b2f0128945f5b241@185.213.27.91:36656,046e5fdfcf33f221da082b8e4161689bcb915135@77.91.84.30:39656'
-custom_port_prefix: 216
+custom_port_prefix: 200
 minimum_gas_price: '0.000aCC'
