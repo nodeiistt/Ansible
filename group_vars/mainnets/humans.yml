@@ -1,4 +1,4 @@
-# Need revision
+# Need revision -- Set targz.yml tmp/bin
 network: humans
 folder: '.humansd'
 daemon: humansd
