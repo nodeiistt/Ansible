@@ -1,5 +1,5 @@
 inv.ini
-inv.ini
+inv_test.ini
 debug.yml
 playground/
 roles/support_seed/templates/node_key.json.j2
