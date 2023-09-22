@@ -8,7 +8,7 @@ genesis: 'https://github.com/cosmos/mainnet/blob/master/genesis/genesis.cosmoshu
 genesis_processing: gz
 minimum_gas_price: '0.0025uatom'
 seeds: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:14956'
-custom_port_prefix: 149
+custom_port_prefix: 100
 upgrade_folder: v12
 update_website_immediately: false
 
