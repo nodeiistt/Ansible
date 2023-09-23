@@ -70,7 +70,7 @@
 - name: start cosmovisor service
   become: true
   systemd:
-    name: '{{ network }}'
+    name: '{{ network }}d'
     state: restarted
     daemon_reload: yes
     enabled: yes
