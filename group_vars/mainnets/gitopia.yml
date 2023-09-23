@@ -4,7 +4,7 @@ daemon: gitopiad
 chain_id: gitopia
 node_version: v3.2.0
 repo: https://github.com/gitopia/gitopia
-binary: https://github.com/gitopia/gitopia/releases/download/v3.0.1/gitopiad_3.0.1_linux_amd64.tar.gz
+binary: https://server.gitopia.com/releases/Gitopia/gitopia/v3.2.0/gitopiad_3.2.0_linux_amd64.tar.gz
 binary_processing: targz
 genesis: https://github.com/gitopia/mainnet/raw/master/genesis.tar.gz
 genesis_processing: targz
