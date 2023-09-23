@@ -97,7 +97,7 @@
     path: '{{ user_dir }}/{{ folder }}/config/app.toml'
     regexp: "# Enable defines if the API(.*)\\senable = false"
     replace: "# Enable defines if the API server should be enabled.\\nenable = true"
-  when: type == 'relayer' or type == 'testrelay'
+  when: type == 'relayer' or type == 'testrelay' or type == 'main'
 
 - name: Enable Swagger for relayer/test
   lineinfile:
@@ -105,7 +105,7 @@
     regexp: 'swagger = '
     line: 'swagger = true'
     state: present
-  when: type == 'relayer' or type == 'testrelay'
+  when: type == 'relayer' or type == 'testrelay' or type == 'main'
 
 - name: Enable CORS for relayer/test
   lineinfile:
