@@ -1,23 +1,24 @@
 ---
 - name: Clone node repo
-git:
-repo: '{{ repo }}'
-dest: '{{ user_dir }}/{{ network }}'
-version: '{{ node_version }}'
-update: yes
-force: yes
-recursive: no
+  git:
+    repo: '{{ repo }}'
+    dest: '{{ user_dir }}/{{ network }}'
+    version: '{{ node_version }}'
+    update: yes
+    force: yes
+    recursive: no
 
 - name: Install node
-command: '{{ item }}'
-args:
-chdir: '{{ user_dir }}/{{ network }}'
-with_items:
-- 'make install'
-environment:
-PATH: '{{ path }}'
-GOPATH: '{{ user_dir }}/go'
-when: binary is undefined
+  command: '{{ item }}'
+  args:
+    chdir: '{{ user_dir }}/{{ network }}'
+  with_items:
+    - 'make install'
+  environment:
+    PATH: '{{ path }}'
+    GOPATH: '{{ user_dir }}/go'
+  when: binary is undefined
+
 
 - name: download binary
   get_url:
