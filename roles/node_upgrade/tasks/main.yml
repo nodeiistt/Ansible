@@ -1,34 +1,45 @@
 ---
 - name: Clone node repo
-  git:
-    repo: '{{ repo }}'
-    dest: '{{ user_dir }}/{{ network }}'
-    version: '{{ node_version }}'
-    update: yes
-    force: yes
-    recursive: no
-
-- name: Skip replace tendermint
-  command: '{{ item }}'
-  with_items:
-    - 'go mod edit -replace github.com/tendermint/tendermint=github.com/skip-mev/mev-tendermint@{{ skip_version }}'
-    - 'go mod tidy'
-  args:
-    chdir: '{{ user_dir }}/{{ network }}'
-  environment:
-    PATH: '{{ path }}'
-    GOPATH: '{{ user_dir }}/go'
-  when: skip_version is defined and (type == "main" or type == "test")
+git:
+repo: '{{ repo }}'
+dest: '{{ user_dir }}/{{ network }}'
+version: '{{ node_version }}'
+update: yes
+force: yes
+recursive: no
 
 - name: Install node
-  command: '{{ item }}'
-  args:
-    chdir: '{{ user_dir }}/{{ network }}'
-  with_items:
-    - 'make install'
-  environment:
-    PATH: '{{ path }}'
-    GOPATH: '{{ user_dir }}/go'
+command: '{{ item }}'
+args:
+chdir: '{{ user_dir }}/{{ network }}'
+with_items:
+- 'make install'
+environment:
+PATH: '{{ path }}'
+GOPATH: '{{ user_dir }}/go'
+when: binary is undefined
+
+- name: download binary
+  get_url:
+    url: '{{ binary }}'
+    dest: '/tmp/binary.tar.gz'
+    mode: '0700'
+    force: yes
+
+- name: unarchive binary file
+  unarchive:
+    src: '/tmp/binary.tar.gz'
+    dest: '/tmp/'
+    mode: '0755'
+    remote_src: true
+
+- name: Copy binary
+  copy:
+    remote_src: true
+    src: '/tmp/{{ daemon }}'
+    dest: '{{ user_dir }}/go/bin/{{ daemon }}'
+    mode: '0755'
+
 
 - name: Create new directory
   file:
