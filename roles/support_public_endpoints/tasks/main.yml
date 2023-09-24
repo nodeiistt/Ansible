@@ -1,4 +1,3 @@
----
 - name: import tasks for mainnet
   import_tasks: mainnet.yml
 
@@ -52,7 +51,7 @@
     port: '{{ custom_port_prefix }}90'
     proto: tcp
 
-    - name: Create rpc endpoint
+- name: Create rpc endpoint
   cloudflare_dns:
     zone: nodeist.net
     record: '{{ rpc }}'
