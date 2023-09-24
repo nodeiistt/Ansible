@@ -1,6 +1,8 @@
 [ununifi]
-ununifi_main ansible_connection=local type=main
-
+ununifi_main ansible_host=10.0.0.1 type=main
+ununifi_backup ansible_host=10.0.0.2 type=backup prepare=false
+ununifi_relayer ansible_host=10.0.0.3 type=relayer prepare=false
+ununifi_tenderduty ansible_host=10.0.0.5 target_ip=10.0.0.3
 
 [all:vars]
 ansible_user=root
