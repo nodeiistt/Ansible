@@ -13,5 +13,5 @@ upgrade_folder: v12
 update_website_immediately: false
 
 # [Optional] Snapshot
-snapshot_hour: 0
+snapshot_hour: 1
 snapshot_minute: 0

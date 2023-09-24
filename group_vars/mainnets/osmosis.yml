@@ -11,6 +11,6 @@ upgrade_folder: v19
 update_website_immediately: false
 
 # [Optional] Snapshot
-snapshot_hour: 1
+snapshot_hour: 3
 snapshot_minute: 0
 wasm: 'outside'

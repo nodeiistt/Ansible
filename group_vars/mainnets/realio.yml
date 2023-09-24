@@ -12,5 +12,5 @@ upgrade_folder: v0.8.3
 gas_params: '--fees 500usei'
 
 # [Optional] Snapshot
-snapshot_hour: 4
-snapshot_minute: 0
+snapshot_hour: 3
+snapshot_minute: 30

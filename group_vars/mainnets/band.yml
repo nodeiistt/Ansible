@@ -12,5 +12,5 @@ upgrade_folder: v2.5.4
 gas_params: '--fees 500uband'
 
 # [Optional] Snapshot
-snapshot_hour: 4
+snapshot_hour: 0
 snapshot_minute: 0

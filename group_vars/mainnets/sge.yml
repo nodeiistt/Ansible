@@ -10,5 +10,5 @@ minimum_gas_price: '10usge'
 custom_port_prefix: 104
 
 # [Optional] Snapshot
-snapshot_hour: 2
-snapshot_minute: 30
+snapshot_hour: 4
+snapshot_minute: 0

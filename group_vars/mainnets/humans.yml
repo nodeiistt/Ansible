@@ -16,5 +16,5 @@ update_website_immediately: true
 gas_params: '--fees 200aheart'
 
 # [Optional] Snapshot
-snapshot_hour: 2
-snapshot_minute: 0
+snapshot_hour: 1
+snapshot_minute: 30

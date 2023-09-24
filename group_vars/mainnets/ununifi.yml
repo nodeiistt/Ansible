@@ -14,5 +14,5 @@ gas_params: '--fees 500uguu'
 
 # [Optional] Snapshot
 snapshot_hour: 4
-snapshot_minute: 0
+snapshot_minute: 30
 wasm: 'outside'
