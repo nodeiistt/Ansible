@@ -45,8 +45,48 @@
     path: '{{ item }}'
     state: absent
   loop:
-    - '/etc/nginx/sites-enabled/{{ network }}-api'
-    - '/etc/nginx/sites-enabled/{{ network }}-rpc'
+    - '/etc/nginx/sites-enabled/rpc-{{ network }}'
+    - '/etc/nginx/sites-enabled/api-{{ network }}'
+  when: type is defined and type == 'main'
+
+- name: remove nginx files
+  become: true
+  file:
+    path: '{{ item }}'
+    state: absent
+  loop:
+    - '/etc/nginx/sites-enabled/rpc-testnet-{{ network }}'
+    - '/etc/nginx/sites-enabled/api-testnet-{{ network }}'
+  when: type is defined and type == 'test'
+
+- name: Delete the record
+  community.general.cloudflare_dns:
+    zone: nodeist.net
+    type: A
+    value: '{{ ansible_host }}'
+    record: '{{ rpc }}'
+    api_token: '{{ cloudflare_api_key }}'
+    state: absent
+
+    - name: Delete the record
+      community.general.cloudflare_dns:
+        zone: nodeist.net
+        type: A
+        value: '{{ ansible_host }}'
+        record: '{{ api }}'
+        api_token: '{{ cloudflare_api_key }}'
+        state: absent
+
+
+- name: Delete the record
+  community.general.cloudflare_dns:
+    zone: nodeist.net
+    type: A
+    value: '{{ ansible_host }}'
+    record: '{{ grpc }}'
+    api_token: '{{ cloudflare_api_key }}'
+    state: absent
+
 
 - name: remove snapshot cronjob
   cron:
