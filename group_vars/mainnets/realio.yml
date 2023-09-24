@@ -4,12 +4,12 @@ daemon: realio-networkd
 chain_id: 'realionetwork_3301-1'
 node_version: 'v0.8.1'
 repo: 'https://github.com/realiotech/realio-network.git'
-genesis: 'https://ss.nodeist.net/realio/genesis.json'
+genesis: 'https://raw.githubusercontent.com/realiotech/mainnet/main/realionetwork_3301-1/genesis.json'
 peers: '4cf66531681c92f15c95c25bd1bff524f9dca35e@65.109.154.181:26656,b2f764694d52e09793d68259d584ece0c194b6fe@65.108.229.93:26656,082e95b5d5351e68dcfb24dff802f9064cfd5a4c@65.109.92.241:51056,a94aec7233f9fec2b2de4b5c9dab6ad979820b3d@65.109.104.118:60756,a0ebd1e5845148c47451452047c7c99621da195e@65.109.96.93:60556'
 custom_port_prefix: 106
-minimum_gas_price: '0usei'
+minimum_gas_price: '0ario'
 upgrade_folder: v0.8.3
-gas_params: '--fees 500usei'
+gas_params: '--fees 500ario'
 
 # [Optional] Snapshot
 snapshot_hour: 3
