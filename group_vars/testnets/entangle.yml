@@ -2,7 +2,7 @@ network: entangle
 folder: '.entangled'
 daemon: entangled
 chain_id: 'entangle_33133-1'
-node_version: 'v1.0.0'
+node_version: '134d9e558aee52abe81fa825272d118f293036f6'
 repo: 'https://github.com/Entangle-Protocol/entangle-blockchain'
 genesis: 'https://raw.githubusercontent.com/hotcrosscom/selfchain-genesis/main/networks/devnet/genesis.json'
 peers: 'f8119b27e7744d36ad1e59736b2488683be0aa3b@3.87.189.254:26656,76492a1356c14304bdd7ec946a6df0b57ba51fe2@3.92.0.61:26656,25b17c1c465b4fd30212a57cad5c37a426185944@15.235.45.89:26656,80165713358209889ea25eecfcb245aaf09be1f0@34.66.181.145:30656'
