@@ -4,8 +4,6 @@ daemon: hid-noded
 chain_id: jagrat
 node_version: v0.1.10
 repo: https://github.com/hypersign-protocol/hid-node
-binary: https://github.com/hypersign-protocol/hid-node/releases/download/v0.1.10/hid-noded-0.1.10-linux-amd64.tar.gz
-binary_processing: targz
 genesis: https://raw.githubusercontent.com/hypersign-protocol/networks/master/testnet/jagrat/final_genesis.json
 seeds: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@testnet-seeds.polkachu.com:10956'
 minimum_gas_price: '0.02uhid'
