@@ -9,6 +9,7 @@ binary: 'https://github.com/althea-net/althea-chain/releases/download/v0.3.2/alt
 binary_processing: default
 seeds: '9aa8a73ea9364aa3cf7806d4dd25b6aed88d8152@althea-testnet.seed.mzonder.com:11356'
 custom_port_prefix: 175
+minimum_gas_price: '0.000ualthea'
 
 # [Optional] Snapshot
 snapshot_hour: 0
