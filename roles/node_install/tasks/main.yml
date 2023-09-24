@@ -44,3 +44,7 @@
     - name: Install from binary
       include_tasks: binary_default.yml
       when: binary_processing == "default"
+
+    - name: Install from binary
+      include_tasks: binary_tar.yml
+      when: binary_processing == "tar"
