@@ -1,5 +1,10 @@
 - name: import tasks for mainnet
   import_tasks: mainnet.yml
+  when: type is defined and type == 'main'
+
+- name: import tasks for testnet
+  import_tasks: testnet.yml
+  when: type is defined and type == 'test'
 
 - name: install nginx package
   become: true

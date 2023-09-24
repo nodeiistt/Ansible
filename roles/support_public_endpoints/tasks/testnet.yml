@@ -1,0 +1,6 @@
+---
+- name: set fasts for default
+  set_fact:
+    rpc: 'rpc-testnet-{{ network }}'
+    api: 'api-testnet-{{ network }}'
+    grpc: 'grpc-testnet-{{ network }}'
