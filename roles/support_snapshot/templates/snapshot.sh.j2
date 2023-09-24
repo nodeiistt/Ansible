@@ -10,8 +10,6 @@ sleep 5
 sudo service {{ network }}d start
 sleep 10
 
-# Get block height
-BLOCK_HEIGHT=$(curl -s http://localhost:{{ custom_port_prefix }}57/status | jq -r .result.sync_info.latest_block_height)
 
 # Stop service
 sudo service {{ network }}d stop
@@ -39,6 +37,7 @@ cp {{ user_dir }}/{{ folder }}/config/genesis.json {{ snap_dir }}/{{ network }}/
 # Restart the service
 sudo service {{ network }}d start
 
+sleep 10
 
 #Log json
 set -e
