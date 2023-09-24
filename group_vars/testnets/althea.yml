@@ -10,5 +10,5 @@ seeds: '9aa8a73ea9364aa3cf7806d4dd25b6aed88d8152@althea-testnet.seed.mzonder.com
 custom_port_prefix: 124
 
 # [Optional] Snapshot
-snapshot_hour: 1
-snapshot_minute: 0
+snapshot_hour: 0
+snapshot_minute: 15

@@ -4,6 +4,8 @@ daemon: osmosisd
 chain_id: osmosis-1
 node_version: v19.0.0
 repo: https://github.com/osmosis-labs/osmosis
+binary: https://github.com/osmosis-labs/osmosis/releases/download/v19.0.0/osmosisd-19.0.0-linux-amd64.tar.gz
+binary_processing: targz
 genesis: 'https://github.com/osmosis-labs/networks/raw/main/osmosis-1/genesis.json'
 seeds: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:12556'
 custom_port_prefix: 101
