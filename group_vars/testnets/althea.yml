@@ -2,7 +2,7 @@ network: althea
 folder: '.althea'
 daemon: althea
 chain_id: althea_7357-1
-node_version: ' v0.5.5'
+node_version: 'v0.5.5'
 repo: https://github.com/althea-net/althea-chain
 binary: https://github.com/althea-net/althea-L1/releases/download/v0.5.5/althea-linux-amd64
 binary_processing: default
