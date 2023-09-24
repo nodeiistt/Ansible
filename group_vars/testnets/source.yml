@@ -1,0 +1,14 @@
+# Not ready
+network: source
+folder: '.source'
+daemon: sourced
+chain_id: sourcechain-testnet
+node_version: e06b810e842e57ec8f5432c9cdd57883a69b3cee
+repo: 'https://github.com/Source-Protocol-Cosmos/source.git'
+genesis: 'https://snapshots.kjnodes.com/source-testnet/genesis.json'
+seeds: '3f472746f46493309650e5a033076689996c8881@source-testnet.rpc.kjnodes.com:12859'
+custom_port_prefix: 186
+
+# [Optional] Snapshot
+snapshot_hour: 9
+snapshot_minute: 15
