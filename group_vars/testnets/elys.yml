@@ -10,5 +10,5 @@ custom_port_prefix: 220
 upgrade_folder: 'v0.11.0'
 
 # [Optional] Snapshot
-snapshot_hour: 3
-snapshot_minute: 30
+snapshot_hour: 5
+snapshot_minute: 15
