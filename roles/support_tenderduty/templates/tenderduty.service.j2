@@ -1,28 +1,12 @@
 [Unit]
-Description=Tenderduty
+Description={{ network }} Tenderduty
 After=network-online.target
 
 [Service]
-Type=simple
+User={{ ansible_user }}
+ExecStart={{ user_dir }}/go/bin/tenderduty -u http://{{ target_ip }}:{{ custom_port_prefix }}57 -f $HOME/tenderduty/config_{{ network }}.yml
 Restart=always
 RestartSec=3
-TimeoutSec=180
-
-User={{ ansible_user }}
-ExecStart=$(which tenderduty) -f $HOME/tenderduty/config_{{ network }}.yml
-
-# there may be a large number of network connections if a lot of chains
-LimitNOFILE=infinity
-
-# extra process isolation
-NoNewPrivileges=true
-ProtectSystem=strict
-RestrictSUIDSGID=true
-LockPersonality=true
-PrivateUsers=true
-PrivateDevices=true
-PrivateTmp=true
 
 [Install]
 WantedBy=multi-user.target
-EOF
