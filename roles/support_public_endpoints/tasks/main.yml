@@ -30,6 +30,7 @@
     owner: 'root'
     group: 'root'
     mode: '0644'
+  when: type is defined and type == 'main'
 
 - name: Copy nginx config file for api
   become: true
@@ -39,6 +40,28 @@
     owner: 'root'
     group: 'root'
     mode: '0644'
+  when: type is defined and type == 'main'
+
+- name: Copy nginx config file for rpc
+  become: true
+  template:
+    src: 'rpc_nginx_conf.j2'
+    dest: '/etc/nginx/sites-enabled/rpc-testnet-{{network}}'
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
+  when: type is defined and type == 'test'
+
+- name: Copy nginx config file for api
+  become: true
+  template:
+    src: 'api_nginx_conf.j2'
+    dest: '/etc/nginx/sites-enabled/api-testnet-{{network}}'
+    owner: 'root'
+    group: 'root'
+    mode: '0644'
+  when: type is defined and type == 'test'
+
 
 - name: restart nginx service
   become: true
