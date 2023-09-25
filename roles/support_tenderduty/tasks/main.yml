@@ -8,6 +8,15 @@
     group: root
     mode: '0644'
 
+- name: copy tenderduty config file
+  become: true
+  template:
+    src: 'config.yml.j2'
+    dest: '{{ user_dir }}/tenderduty/config.yml'
+    owner: root
+    group: root
+    mode: '0644'
+
 - name: start tenderduty service
   become: true
   systemd:
