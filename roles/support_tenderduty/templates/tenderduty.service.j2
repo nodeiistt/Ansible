@@ -1,0 +1,29 @@
+[Unit]
+Description=Tenderduty
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=3
+TimeoutSec=180
+
+User={{ ansible_user }}
+WorkingDirectory=$HOME/tenderduty
+ExecStart=$(which tenderduty) -f $HOME/tenderduty/config_{{ network }}.yml
+
+# there may be a large number of network connections if a lot of chains
+LimitNOFILE=infinity
+
+# extra process isolation
+NoNewPrivileges=true
+ProtectSystem=strict
+RestrictSUIDSGID=true
+LockPersonality=true
+PrivateUsers=true
+PrivateDevices=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
+EOF
