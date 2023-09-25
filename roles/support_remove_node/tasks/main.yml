@@ -25,7 +25,7 @@
 
 - name: remove binary from go bin
   file:
-    path: '{{ user_dir }}/{{ daemon }}'
+    path: '{{ user_dir }}/go/bin/{{ daemon }}'
     state: absent
 
 - name: remove genesis file, snapshot file, state sync file and resync files
