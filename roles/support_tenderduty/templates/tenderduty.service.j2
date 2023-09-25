@@ -9,7 +9,6 @@ RestartSec=3
 TimeoutSec=180
 
 User={{ ansible_user }}
-WorkingDirectory=$HOME/tenderduty
 ExecStart=$(which tenderduty) -f $HOME/tenderduty/config_{{ network }}.yml
 
 # there may be a large number of network connections if a lot of chains
