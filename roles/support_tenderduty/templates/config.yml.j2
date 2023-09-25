@@ -35,5 +35,5 @@ chains:
       telegram:
         enabled: yes
     nodes:
-      - url: tcp://localhost:{{ custom_port_prefix }}57
+      - url: tcp://{{ ansible_host }}:{{ custom_port_prefix }}57
         alert_if_down: yes
