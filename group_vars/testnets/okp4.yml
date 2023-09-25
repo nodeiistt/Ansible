@@ -12,6 +12,3 @@ upgrade_folder: v5.0.0
 # [Optional] Snapshot
 snapshot_hour: 8
 snapshot_minute: 15
-
-#Alert Management
-valoper: okp4valoper194eplc7zh07yh3d23nuy85eagcpycgejx9apu3

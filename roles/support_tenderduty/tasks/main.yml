@@ -3,16 +3,7 @@
   become: true
   template:
     src: 'tenderduty.service.j2'
-    dest: '/etc/systemd/system/tenderduty_{{ network }}.service'
-    owner: root
-    group: root
-    mode: '0644'
-
-- name: copy tenderduty config file
-  become: true
-  template:
-    src: 'config.yml.j2'
-    dest: '{{ user_dir }}/tenderduty/config_{{ network }}.yml'
+    dest: '/etc/systemd/system/tenderduty.service'
     owner: root
     group: root
     mode: '0644'
@@ -20,7 +11,7 @@
 - name: start tenderduty service
   become: true
   systemd:
-    name: 'tenderduty_{{ network }}'
+    name: 'tenderduty'
     state: restarted
     daemon_reload: yes
     enabled: yes

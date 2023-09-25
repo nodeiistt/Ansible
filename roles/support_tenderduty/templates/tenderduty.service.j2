@@ -4,7 +4,7 @@ After=network-online.target
 
 [Service]
 User={{ ansible_user }}
-ExecStart={{ user_dir }}/go/bin/tenderduty -f $HOME/tenderduty/config_{{ network }}.yml
+ExecStart={{ user_dir }}/go/bin/tenderduty 
 Restart=always
 RestartSec=3
 
