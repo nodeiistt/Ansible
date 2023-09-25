@@ -59,35 +59,6 @@
     - '/etc/nginx/sites-enabled/api-testnet-{{ network }}'
   when: type is defined and type == 'test'
 
-- name: Delete the record
-  community.general.cloudflare_dns:
-    zone: nodeist.net
-    type: A
-    value: '{{ ansible_host }}'
-    record: '{{ rpc }}'
-    api_token: '{{ cloudflare_api_key }}'
-    state: absent
-
-    - name: Delete the record
-      community.general.cloudflare_dns:
-        zone: nodeist.net
-        type: A
-        value: '{{ ansible_host }}'
-        record: '{{ api }}'
-        api_token: '{{ cloudflare_api_key }}'
-        state: absent
-
-
-- name: Delete the record
-  community.general.cloudflare_dns:
-    zone: nodeist.net
-    type: A
-    value: '{{ ansible_host }}'
-    record: '{{ grpc }}'
-    api_token: '{{ cloudflare_api_key }}'
-    state: absent
-
-
 - name: remove snapshot cronjob
   cron:
     user: '{{ ansible_user }}'
