@@ -14,6 +14,32 @@ telegram:
   api_key: "{{ telegram_api_key }}"
   channel: "{{ telegram_channel }}"
 
+
+  chains:
+    "althea":
+      chain_id: althea_7357-1
+      valoper_address: altheavaloper1mtfhwl7wwjllt05gj3dc2tesvvzvx90jz6t4sj
+      public_fallback: no
+      alerts:
+        stalled_enabled: yes
+        stalled_minutes: 10
+        consecutive_enabled: yes
+        consecutive_missed: 5
+        consecutive_priority: critical
+        percentage_enabled: no
+        percentage_missed: 10
+        percentage_priority: warning
+        alert_if_inactive: yes
+        alert_if_no_servers: yes
+        discord:
+          enabled: yes
+        telegram:
+          enabled: yes
+      nodes:
+        - url: tcp://localhost:19057
+          alert_if_down: yes
+
+
 chains:
   "okp4":
     chain_id: okp4-nemeton-1
