@@ -1,6 +1,6 @@
 ---
 enable_dashboard: yes
-listen_port: {{ tenderduty_listen_port }}
+listen_port:
 hide_logs: no
 node_down_alert_minutes: 3
 node_down_alert_severity: critical
@@ -8,17 +8,17 @@ prometheus_enabled: yes
 prometheus_listen_port: 28686
 discord:
   enabled: yes
-  webhook: {{ discord_webhook }}
+  webhook:
 telegram:
   enabled: yes
-  api_key: "{{ telegram_api_key }}"
-  channel: "{{ telegram_channel }}"
+  api_key: ""
+  channel: ""
 
 
-  chains:
-    "althea":
-      chain_id: althea_7357-1
-      valoper_address: altheavaloper1mtfhwl7wwjllt05gj3dc2tesvvzvx90jz6t4sj
+chains:
+    "Band":
+      chain_id: laozi-mainnet
+      valoper_address: bandvaloper17fhw72gsrhnucyzfag068yhsp3kj5yeu0xu5x2
       public_fallback: no
       alerts:
         stalled_enabled: yes
@@ -36,14 +36,14 @@ telegram:
         telegram:
           enabled: yes
       nodes:
-        - url: tcp://localhost:19057
+        - url: tcp://{{ ansible_host }}:10357
           alert_if_down: yes
 
 
 chains:
-  "okp4":
-    chain_id: okp4-nemeton-1
-    valoper_address: okp4valoper194eplc7zh07yh3d23nuy85eagcpycgejx9apu3
+  "Cosmos":
+    chain_id: cosmoshub-4
+    valoper_address: cosmosvaloper1pp82zzdgf4cvgwkkutkwnfu9vzcm6rpryn2wcc
     public_fallback: no
     alerts:
       stalled_enabled: yes
@@ -61,5 +61,180 @@ chains:
       telegram:
         enabled: yes
     nodes:
-      - url: tcp://localhost:17657
+      - url: tcp://{{ ansible_host }}:10057
+        alert_if_down: yes
+
+
+chains:
+  "Gitopia":
+    chain_id: gitopia
+    valoper_address: gitopiavaloper1uk879gryge4l7cak8q9erzz38kfpek0xkx3u34
+    public_fallback: no
+    alerts:
+      stalled_enabled: yes
+      stalled_minutes: 10
+      consecutive_enabled: yes
+      consecutive_missed: 5
+      consecutive_priority: critical
+      percentage_enabled: no
+      percentage_missed: 10
+      percentage_priority: warning
+      alert_if_inactive: yes
+      alert_if_no_servers: yes
+      discord:
+        enabled: yes
+      telegram:
+        enabled: yes
+    nodes:
+      - url: tcp://{{ ansible_host }}:10757
+        alert_if_down: yes
+
+
+chains:
+  "Humans":
+    chain_id: humans_1089-1
+    valoper_address: humanvaloper1pmv6majv58drgx9yysu78audep8m9xu6qwz8tx
+    public_fallback: no
+    alerts:
+      stalled_enabled: yes
+      stalled_minutes: 10
+      consecutive_enabled: yes
+      consecutive_missed: 5
+      consecutive_priority: critical
+      percentage_enabled: no
+      percentage_missed: 10
+      percentage_priority: warning
+      alert_if_inactive: yes
+      alert_if_no_servers: yes
+      discord:
+        enabled: yes
+      telegram:
+        enabled: yes
+    nodes:
+      - url: tcp://{{ ansible_host }}:10857
+        alert_if_down: yes
+
+
+chains:
+  "Irisnet":
+    chain_id: irishub-1
+    valoper_address: iva1ktlzsws98m9xpx9mlqkm9l7kep8kppgce6hceh
+    public_fallback: no
+    alerts:
+      stalled_enabled: yes
+      stalled_minutes: 10
+      consecutive_enabled: yes
+      consecutive_missed: 5
+      consecutive_priority: critical
+      percentage_enabled: no
+      percentage_missed: 10
+      percentage_priority: warning
+      alert_if_inactive: yes
+      alert_if_no_servers: yes
+      discord:
+        enabled: yes
+      telegram:
+        enabled: yes
+    nodes:
+      - url: tcp://{{ ansible_host }}:10257
+        alert_if_down: yes
+
+
+chains:
+  "Jackal":
+    chain_id: jackal-1
+    valoper_address: jklvaloper1y89nm42gk7thhpp4ar0tdz4fva6mnq8z3zfv7a
+    public_fallback: no
+    alerts:
+      stalled_enabled: yes
+      stalled_minutes: 10
+      consecutive_enabled: yes
+      consecutive_missed: 5
+      consecutive_priority: critical
+      percentage_enabled: no
+      percentage_missed: 10
+      percentage_priority: warning
+      alert_if_inactive: yes
+      alert_if_no_servers: yes
+      discord:
+        enabled: yes
+      telegram:
+        enabled: yes
+    nodes:
+      - url: tcp://{{ ansible_host }}:10957
+        alert_if_down: yes
+
+
+chains:
+  "Osmosis":
+    chain_id: osmosis-1
+    valoper_address: osmovaloper1yx3lkqy2zv4za3ymq2efwfwga4yl4xavpg9e8e
+    public_fallback: no
+    alerts:
+      stalled_enabled: yes
+      stalled_minutes: 10
+      consecutive_enabled: yes
+      consecutive_missed: 5
+      consecutive_priority: critical
+      percentage_enabled: no
+      percentage_missed: 10
+      percentage_priority: warning
+      alert_if_inactive: yes
+      alert_if_no_servers: yes
+      discord:
+        enabled: yes
+      telegram:
+        enabled: yes
+    nodes:
+      - url: tcp://{{ ansible_host }}:10157
+        alert_if_down: yes
+
+
+chains:
+  "Realio-network":
+    chain_id: realionetwork_3301-1
+    valoper_address: realiovaloper10cu8yz9vvmpllyel7gl3ggpnuyjwnnfdsw79mw
+    public_fallback: no
+    alerts:
+      stalled_enabled: yes
+      stalled_minutes: 10
+      consecutive_enabled: yes
+      consecutive_missed: 5
+      consecutive_priority: critical
+      percentage_enabled: no
+      percentage_missed: 10
+      percentage_priority: warning
+      alert_if_inactive: yes
+      alert_if_no_servers: yes
+      discord:
+        enabled: yes
+      telegram:
+        enabled: yes
+    nodes:
+      - url: tcp://{{ ansible_host }}:10657
+        alert_if_down: yes
+
+
+chains:
+  "Sge":
+    chain_id: sgenet-1
+    valoper_address: sgevaloper1nr24vyc3nnqwyqgzp0c0rkgc9ct80l5mxh9672
+    public_fallback: no
+    alerts:
+      stalled_enabled: yes
+      stalled_minutes: 10
+      consecutive_enabled: yes
+      consecutive_missed: 5
+      consecutive_priority: critical
+      percentage_enabled: no
+      percentage_missed: 10
+      percentage_priority: warning
+      alert_if_inactive: yes
+      alert_if_no_servers: yes
+      discord:
+        enabled: yes
+      telegram:
+        enabled: yes
+    nodes:
+      - url: tcp://{{ ansible_host }}:10457
         alert_if_down: yes
