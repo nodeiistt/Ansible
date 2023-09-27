@@ -10,6 +10,7 @@ custom_port_prefix: 103
 minimum_gas_price: '0uband'
 upgrade_folder: v2.5.4
 gas_params: '--fees 500uband'
+denom: uband
 
 # [Optional] Snapshot
 snapshot_hour: 0

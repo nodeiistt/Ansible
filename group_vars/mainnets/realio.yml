@@ -10,6 +10,7 @@ custom_port_prefix: 106
 minimum_gas_price: '0ario'
 upgrade_folder: v0.8.3
 gas_params: '--fees 500ario'
+denom: ario
 
 # [Optional] Snapshot
 snapshot_hour: 3

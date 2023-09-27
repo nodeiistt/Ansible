@@ -11,6 +11,7 @@ seeds: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:12556'
 custom_port_prefix: 101
 upgrade_folder: v19
 update_website_immediately: false
+denom: uosmo
 
 # [Optional] Snapshot
 snapshot_hour: 3

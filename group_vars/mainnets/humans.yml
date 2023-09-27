@@ -14,6 +14,7 @@ custom_port_prefix: 108
 upgrade_folder: 'v1.0.0'
 update_website_immediately: true
 gas_params: '--fees 200aheart'
+denom: aheart
 
 # [Optional] Snapshot
 snapshot_hour: 1

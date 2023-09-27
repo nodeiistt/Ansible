@@ -10,6 +10,7 @@ minimum_gas_price: 0.002ujkl
 custom_port_prefix: 109
 upgrade_folder: v3
 update_website_immediately: false
+denom: ujkl
 
 # [Optional] Snapshot
 snapshot_hour: 2

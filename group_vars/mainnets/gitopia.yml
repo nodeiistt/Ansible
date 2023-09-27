@@ -14,6 +14,7 @@ custom_port_prefix: 107
 upgrade_folder: 'v3.2.0'
 update_website_immediately: true
 gas_params: '--fees 200ulore'
+denom: ulore
 
 # [Optional] Snapshot
 snapshot_hour: 0
