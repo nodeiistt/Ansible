@@ -1,4 +1,4 @@
-network: realio
+network: realio-network
 folder: '.realio-network'
 daemon: realio-networkd
 chain_id: 'realionetwork_3301-1'
