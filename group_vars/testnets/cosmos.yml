@@ -8,6 +8,7 @@ genesis: 'https://raw.githubusercontent.com/cosmos/testnets/master/replicated-se
 seeds: '08ec17e86dac67b9da70deb20177655495a55407@provider-seed-01.rs-testnet.polypore.xyz:26656,4ea6e56300a2f37b90e58de5ee27d1c9065cf871@provider-seed-02.rs-testnet.polypore.xyz:26656'
 custom_port_prefix: 149
 upgrade_folder: v12
+denom: uatom
 
 # [Optional] Snapshot
 snapshot_hour: 0

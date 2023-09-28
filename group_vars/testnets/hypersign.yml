@@ -10,6 +10,7 @@ minimum_gas_price: '0.02uhid'
 custom_port_prefix: 180
 upgrade_folder: v0110
 update_website_immediately: true
+denom: uhid
 
 # [Optional] Snapshot
 snapshot_hour: 2

@@ -11,6 +11,7 @@ minimum_gas_price: 0.0025unoria
 custom_port_prefix: 221
 upgrade_folder: v1.3.0
 update_website_immediately: true
+denom: unoria
 
 # [Optional] Snapshot
 snapshot_hour: 7

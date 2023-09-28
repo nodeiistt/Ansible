@@ -13,6 +13,7 @@ minimum_gas_price: '0ulava'
 custom_port_prefix: 181
 gas_params: '--gas auto --gas-adjustment 1.5'
 upgrade_folder: v0.22.0
+denom: ulava
 
 # [Optional] Snapshot
 snapshot_hour: 3

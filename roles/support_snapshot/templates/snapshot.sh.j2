@@ -39,7 +39,10 @@ sudo service {{ network }}d start
 
 sleep 10
 
+
 #Log json
+rm -rf {{ snap_dir }}/{{ network }}/log.json
+
 set -e
 now_date() {
     echo -n $(TZ=":Europe/Moscow" date '+%Y-%m-%d_%H:%M:%S')

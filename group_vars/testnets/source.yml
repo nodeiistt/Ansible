@@ -9,6 +9,7 @@ peers: 'e429566b80cd8d735df9a2bf6e87ad84403379ba@147.182.211.27:26656,938ee37871
 custom_port_prefix: 186
 minimum_gas_price: '0usource'
 wasm: 'inside'
+denom: usource
 
 # [Optional] Snapshot
 snapshot_hour: 9
