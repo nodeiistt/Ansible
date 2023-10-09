@@ -1,16 +1,16 @@
 network: nibiru
 folder: '.nibid'
 daemon: nibid
-chain_id: nibiru-testnet-2
-node_version: v0.21.10
+chain_id: nibiru-itn-3
+node_version: v0.21.11
 repo: https://github.com/NibiruChain/nibiru
-binary: https://github.com/NibiruChain/nibiru/releases/download/v0.21.10/nibid_0.21.10_linux_amd64.tar.gz
+binary: https://github.com/NibiruChain/nibiru/releases/download/v0.21.11/nibid_0.21.11_linux_amd64.tar.gz
 binary_processing: targz
-genesis: 'https://rpc.itn-2.nibiru.fi/genesis'
-seeds: 'dabcc13d6274f4dd86fd757c5c4a632f5062f817@seed-2.nibiru-testnet-2.nibiru.fi:26656,a5383b33a6086083a179f6de3c51434c5d81c69d@seed-1.nibiru-testnet-2.nibiru.fi:26656'
+genesis: 'https://networks.itn.nibiru.fi/nibiru-itn-3/genesis'
+seeds: 'ed21fa911d4e09f4fa3b22ea8414d83fcfcc631f@95.217.57.33:11656,515b95c60698a37a72a140cebc0fd458c722405b@65.108.71.241:11656,4bff31485a402a0e2bd2c0671f9056ed2cb60478@34.77.52.8:26656,306b7549a5fd41c77a1695dea306292ffae38d8b@34.38.59.17:26656,f3d7bd247c98def038eff666c7a3b4ddd33f7095@65.21.232.222:11656,c068c45ef902b35dd9ea4f6b82405e6ab2dfc730@65.109.92.241:26656,ec679c03b4d066fe22e16055f6d20fef99bb949d@94.130.135.112:11656,af6e18e66451977bdfbec38d4a37ba5cc4be36ff@65.21.141.155:11656,044a7d256f86502dde98a41c316ee35ecc4fa038@95.217.198.190:11656,b341d29b3b7dfad3ee89cc1738db3dcf5ac3a94c@213.202.208.49:26656'
 custom_port_prefix: 182
 minimum_gas_price: '0.025unibi'
-upgrade_folder: 'v0.21.10'
+upgrade_folder: 'v0.21.11'
 denom: unibi
 
 # [Optional] Snapshot
