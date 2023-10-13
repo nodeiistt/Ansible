@@ -1,0 +1,17 @@
+network: cardchain
+folder: '.Cardchain'
+daemon: Cardchaind
+chain_id: cardtestnet-4
+node_version: TBD
+repo: TBD
+binary: https://github.com/DecentralCardGame/Cardchain/releases/download/v0.9.1/Cardchaind
+binary_processing: default
+genesis: 'http://45.136.28.158:3000/genesis.json'
+peers: '1ed98c796bcdd0faf5a7ad8793d229e3c7d89543@lxgr.xyz:26656'
+custom_port_prefix: 200
+minimum_gas_price: '0.000ubpf'
+denom: ubpf
+
+# [Optional] Snapshot
+snapshot_hour: 11
+snapshot_minute: 45
