@@ -6,6 +6,8 @@ node_version: v13.0.0
 repo: 'https://github.com/cosmos/gaia'
 genesis: 'https://github.com/cosmos/mainnet/blob/master/genesis/genesis.cosmoshub-4.json.gz?raw=true'
 genesis_processing: gz
+binary: https://github.com/cosmos/gaia/releases/download/v13.0.0/gaiad-v13.0.0-linux-amd64
+binary_processing: default
 minimum_gas_price: '0.0025uatom'
 seeds: 'ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:14956'
 custom_port_prefix: 100
