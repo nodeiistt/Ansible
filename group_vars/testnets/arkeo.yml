@@ -5,7 +5,7 @@ daemon: arkeod
 chain_id: 'arkeo'
 node_version: 'latest'
 repo: 'https://github.com/arkeonetwork/arkeo'
-genesis: 'http://seed.arkeo.network:26657/genesis'
+genesis: 'https://testnet-snapshot.genznodes.dev/arkeo/genesis.json'
 binary: https://snapshots-testnet.nodejumper.io/arkeonetwork-testnet/arkeod
 binary_processing: default
 peers: ''
