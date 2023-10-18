@@ -2,10 +2,10 @@ network: entangle
 folder: '.entangled'
 daemon: entangled
 chain_id: 'entangle_33133-1'
-node_version: '134d9e558aee52abe81fa825272d118f293036f6'
+node_version: 'ce539b81e760a3e75acd7fde9038c21fbe7b7baa'
 repo: 'https://github.com/Entangle-Protocol/entangle-blockchain'
-genesis: 'https://testnet-snapshot.genznodes.dev/entangle/genesis.json'
-peers: 'f8119b27e7744d36ad1e59736b2488683be0aa3b@3.87.189.254:26656,76492a1356c14304bdd7ec946a6df0b57ba51fe2@3.92.0.61:26656,25b17c1c465b4fd30212a57cad5c37a426185944@15.235.45.89:26656,80165713358209889ea25eecfcb245aaf09be1f0@34.66.181.145:30656'
+genesis: 'https://ss-t.entangle.nodestake.top/genesis.json'
+peers: 'f7f8c7b2b13b7af762a5513658a1cc5f0923acbd@144.91.124.126:30656,48dad8cfbc4cdbcc6cde4fbf21acd77b7b5d3d04@95.217.129.196:26656,5533b52c2917333d4e86b1417fbfd8640b51d200@207.180.207.148:26656,6ab753ca242b9bb83af3786a94583640355cf1e2@65.109.70.45:11656'
 minimum_gas_price: '0aNGL'
 custom_port_prefix: 179
 denom: aNGL
