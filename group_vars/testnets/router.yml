@@ -11,6 +11,7 @@ peers: '36eb478177e691b3389cdc60ed618c57f2a4acd7@13.127.150.80:26656,16bc9a252c2
 seeds: '36eb478177e691b3389cdc60ed618c57f2a4acd7@13.127.150.80:26656,16bc9a252c2cb82c6aefdc82826f7d7021114f0a@13.127.165.58:26656,074d7d3c5d142cbec150093086055d73be0080cf@35.178.32.171:26656'
 custom_port_prefix: 185
 denom: urouter
+upgrade_folder: v1.2-to-v1.2.1
 
 # [Optional] Snapshot
 snapshot_hour: 8
