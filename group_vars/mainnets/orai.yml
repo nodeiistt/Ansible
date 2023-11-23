@@ -1,0 +1,18 @@
+network: orai
+folder: '.oraid'
+daemon: oraid
+chain_id: Oraichain
+node_version: v0.41.4
+repo: https://github.com/oraichain/orai
+genesis: https://snap.nodex.one/orai/genesis.json
+peers: ''
+minimum_gas_price: '0.001orai'
+custom_port_prefix: 107
+upgrade_folder: 'v0.41.4'
+update_website_immediately: true
+gas_params: '--fees 200orai'
+denom: orai
+
+# [Optional] Snapshot
+snapshot_hour: 0
+snapshot_minute: 30
