@@ -1,4 +1,4 @@
-network: orai
+network: oraichain
 folder: '.oraid'
 daemon: oraid
 chain_id: Oraichain
