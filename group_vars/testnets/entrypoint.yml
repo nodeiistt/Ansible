@@ -1,0 +1,17 @@
+# Custom binary build
+network: entrypoint
+folder: '.entrypoint'
+daemon: entrypointd
+chain_id: 'entrypoint-pubtest-2'
+node_version: 'TBD'
+repo: https://github.com/entrypoint-zone/testnets/
+binary: https://github.com/entrypoint-zone/testnets/releases/download/v1.2.0/entrypointd-1.2.0-linux-amd64
+binary_processing: default
+genesis: https://anode.team/EntryPoint/test/genesis.json
+peers: '81bf2ade773a30eccdfee58a041974461f1838d8@185.107.68.148:26656,d57c7572d58cb3043770f2c0ba412b35035233ad@80.64.208.169:26656'
+custom_port_prefix: 196
+denom: uentry
+
+# [Optional] Snapshot
+snapshot_hour: 1
+snapshot_minute: 10
