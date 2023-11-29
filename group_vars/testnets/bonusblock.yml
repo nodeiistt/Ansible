@@ -3,7 +3,7 @@ network: bonusblock
 folder: '.bonusblock'
 daemon: bonus-blockd
 chain_id: 'blocktopia-01'
-node_version: 'v0.1.39'
+node_version: ''
 repo: https://github.com/BBlockLabs/BonusBlock-chain
 genesis: https://anode.team/BonusBlock/test/genesis.json
 peers: 'd1b0bc188408a7ea559ab083488f58dd51c1a6cc@144.91.66.143:29656'
