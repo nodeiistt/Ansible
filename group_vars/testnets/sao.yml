@@ -1,0 +1,15 @@
+network: sao
+folder: '.sao'
+daemon: saod
+chain_id: 'sao-testnet1'
+node_version: 'v0.1.7'
+repo: https://github.com/SaoNetwork/sao-consensus.git
+genesis: https://anode.team/SAO/test/genesis.json
+seeds: 'a5298771c624a376fdb83c48cc6c630e58092c62@192.18.136.151:26656,59cef823c1a426f15eb9e688287cd1bc2b6ea42d@152.70.126.187:26656'
+custom_port_prefix: 194
+upgrade_folder: 'v0.1.7'
+denom: sao
+
+# [Optional] Snapshot
+snapshot_hour: 5
+snapshot_minute: 18
