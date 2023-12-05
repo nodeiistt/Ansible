@@ -4,8 +4,8 @@ daemon: cascadiad
 chain_id: cascadia_11029-1
 node_version: v0.1.9
 repo: https://github.com/CascadiaFoundation/cascadia
-binary: https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.9-1/cascadiad-v0.1.9-1-linux-amd64.tar.gz
-binary_processing: targz
+binary: https://github.com/CascadiaFoundation/cascadia/releases/download/v0.1.8/cascadiad
+binary_processing: default
 genesis: 'https://ss-t.cascadia.nodestake.top/genesis.json'
 peers: 'd1ed80e232fc2f3742637daacab454e345bbe475@54.204.246.120:26656,0c96a6c328eb58d1467afff4130ab446c294108c@34.239.67.55:26656'
 custom_port_prefix: 178
