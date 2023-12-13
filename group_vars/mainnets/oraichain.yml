@@ -14,6 +14,8 @@ upgrade_folder: 'v0.41.4'
 update_website_immediately: true
 gas_params: '--fees 200orai'
 denom: orai
+decimal: 6
+valoper: oraivaloper1h5t4s6ytd53rgxc6075kkfjlvw23gfjvjprrut
 
 # [Optional] Snapshot
 snapshot_hour: 0

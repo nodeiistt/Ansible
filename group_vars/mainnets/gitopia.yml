@@ -15,6 +15,8 @@ upgrade_folder: 'v3.3.0'
 update_website_immediately: true
 gas_params: '--fees 200ulore'
 denom: ulore
+decimal: 6  
+valoper: gitopiavaloper1uk879gryge4l7cak8q9erzz38kfpek0xkx3u34
 
 # [Optional] Snapshot
 snapshot_hour: 0

@@ -10,6 +10,8 @@ custom_port_prefix: 110
 minimum_gas_price: '0usource'
 wasm: 'inside'
 denom: usource
+decimal: 6
+valoper: sourcevaloper1cej3alfs97scvtnawanlgutmqjsy5lcazekff6
 
 # [Optional] Snapshot
 snapshot_hour: 10

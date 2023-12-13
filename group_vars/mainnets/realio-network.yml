@@ -11,6 +11,8 @@ minimum_gas_price: '0ario'
 upgrade_folder: v0.8.3
 gas_params: '--fees 500ario'
 denom: ario
+decimal: 6
+valoper: sgevaloper1nr24vyc3nnqwyqgzp0c0rkgc9ct80l5mxh9672
 
 # [Optional] Snapshot
 snapshot_hour: 3
