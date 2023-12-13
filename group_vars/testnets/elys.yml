@@ -9,6 +9,8 @@ peers: 'ae22b82b1dc34fa0b1a64854168692310f562136@198.27.74.140:26656'
 custom_port_prefix: 220
 upgrade_folder: 'v0.17.0'
 denom: uelys
+decimal: 6
+valoper: elysvaloper1cxy6ezj9z50aucue0y4hxwus5efqwesf0enjy3
 
 # [Optional] Snapshot
 snapshot_hour: 5
