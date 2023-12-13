@@ -11,6 +11,8 @@ minimum_gas_price: '0uandr'
 upgrade_folder: andromeda-1-v0.1.0
 gas_params: '--fees 500uandr'
 denom: uandr
+decimal: 6
+valoper: andrvaloper1t8g0fjdwnet2eg4ka9pujs8f3a4qmcexllfgnz
 
 # [Optional] Snapshot
 snapshot_hour: 2
