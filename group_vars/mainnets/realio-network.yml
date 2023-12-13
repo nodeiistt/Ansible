@@ -12,7 +12,7 @@ upgrade_folder: v0.8.3
 gas_params: '--fees 500ario'
 denom: ario
 decimal: 6
-valoper: sgevaloper1nr24vyc3nnqwyqgzp0c0rkgc9ct80l5mxh9672
+valoper: realiovaloper10cu8yz9vvmpllyel7gl3ggpnuyjwnnfdsw79mw
 
 # [Optional] Snapshot
 snapshot_hour: 3

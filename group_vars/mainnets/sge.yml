@@ -9,6 +9,8 @@ peers: '4980b478f91de9be0564a547779e5c6cb07eb995@3.239.15.80:26656,0e7042be1b777
 minimum_gas_price: '10usge'
 custom_port_prefix: 104
 denom: usge
+decimal: 6
+valoper: sgevaloper1nr24vyc3nnqwyqgzp0c0rkgc9ct80l5mxh9672
 
 # [Optional] Snapshot
 snapshot_hour: 4
