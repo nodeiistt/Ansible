@@ -11,6 +11,8 @@ custom_port_prefix: 109
 upgrade_folder: v3
 update_website_immediately: false
 denom: ujkl
+decimal: 6
+valoper: jklvaloper1y89nm42gk7thhpp4ar0tdz4fva6mnq8z3zfv7a
 
 # [Optional] Snapshot
 snapshot_hour: 2
