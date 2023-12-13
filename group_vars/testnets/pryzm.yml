@@ -1,0 +1,20 @@
+network: pryzm
+folder: '.pryzm'
+daemon: pryzmd
+chain_id: 'indigo-1'
+node_version: 'v0.9.0'
+repo: 'TBD'
+binary: 'https://storage.googleapis.com/pryzm-resources/pryzmd-0.9.0-linux-amd64.tar.gz'
+binary_processing: targz
+genesis: https://snapshots.synergynodes.com/genesis/pryzm_testnet/genesis.json
+peers: '8acc64034c3805a09581c4359f0c1e8b28c73873@178.128.225.129:26656,c778da65696e032ff92375c9b3a296d54fa89126@195.201.245.178:56076,8978a749557b044feb7ea659af71f09a561470de@23.88.5.169:30656,470bf421c6887def16e65dfe05cf1344826be06b@95.214.53.187:32656,3cb6bf28cde7571fff7f5536f7441993789eff38@178.62.75.58:26656,2d8296b0e85fdb22e2a6bb7f85d91b5e96ba021e@37.27.58.171:26656,37210f7727961f7f50f92878183c8e105590f4c9@154.53.46.181:26656,7c743b507ec3b67bc790c826ec471d2635c992f7@88.99.3.158:24656,d0e9239f982e1df5919290557280cf8bc78706e8@2a01:4f9:1a:9462::7:26656,8b13facd07099883a2275db870834390109ded62@92.243.27.215:27656,835c7f8a5ba11a53244ca9346ea5324c3a4ba3ed@188.40.66.173:24656
+'
+custom_port_prefix: 248
+upgrade_folder: v15
+update_website_immediately: true
+minimum_gas_price: '0.015upryzm,0.015uusdc'
+gas_params: '--fees 3000upryzm'
+
+# [Optional] Snapshot
+snapshot_hour: 8
+snapshot_minute: 30
