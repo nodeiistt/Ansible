@@ -1,0 +1,15 @@
+# Custom binary build
+network: blockx
+folder: '.blockxd'
+daemon: blockxd
+chain_id: 'blockx_100-1'
+node_version: 'TBD'
+repo: https://github.com/BlockXLabs/BlockX-Genesis-Mainnet1.git
+genesis: https://raw.githubusercontent.com/BlockXLabs/networks/master/chains/blockx_100-1/genesis.json
+seeds: 'cd462b62d54296ab4550d7c1ed5baafe5653faa6@137.184.7.64:26656,fbaf65d8f2732cb19269569763de4b75d84f5f52@147.182.238.235:26656,5f21477b66cce124fc61167713243d8de30a9572@137.184.38.212:26656,abddf4491980d5e6c31b44e3640610c77d475d89@146.190.153.165:26656'
+custom_port_prefix: 113
+denom: abcx
+
+# [Optional] Snapshot
+snapshot_hour: 1
+snapshot_minute: 0
