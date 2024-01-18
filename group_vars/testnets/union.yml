@@ -6,7 +6,7 @@ node_version: 'v0.18.0'
 repo: TBA
 binary: https://api.nodes.guru/uniond
 binary_processing: default
-genesis: 'https://snapshots.kjnodes.com/union-testnet/genesis.json'
+genesis: 'https://api.nodes.guru/union-testnet-5-genesis.json'
 peers: 'd5519e378247dfb61dfe90652d1fe3e2b3005a5b@65.109.68.190:17156,01fe0f9e6e3f3a82f51ebfa0f82d9cab66b224ae@95.217.107.96:26256,daa56ac6573c6427ecef438d4c248d72b206597b@157.245.1.27:26656,64217e41110f6484d686f1f2f7bc654f1532bf6f@91.223.3.190:56076,9711a765a9579699dbdce64f0bfbe766a5f17314@194.195.87.184:10656,2dad4529930a677fe267cedcac86043d09acdc36@65.108.105.48:24656,819d62f0cebf2b4ef8dac7794fbe7ec62f8a4481@157.245.1.52:26656,d0e9239f982e1df5919290557280cf8bc78706e8@65.108.192.123:26656,ec244b6ea1ff9314e32e269045d08035f53c71cd@167.235.178.134:24656'
 custom_port_prefix: 197
 minimum_gas_price: '0muno'
