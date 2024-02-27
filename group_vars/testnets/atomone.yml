@@ -1,0 +1,14 @@
+network: govgen
+folder: '.govgen'
+daemon: govgend
+chain_id: govgen-1
+node_version: v1.0.1
+repo: https://github.com/atomone-hub/govgen.git
+genesis: https://raw.githubusercontent.com/dymensionxyz/testnets/main/dymension-hub/froopyland/genesis.json
+peers: 'e43fa897f5d4521cf979b2b45c1c7ce6ce7526ca@167.235.183.213:26656,12bdc497920301a6c8071341e0345213807ea24c@192.168.1.8:26656,103c1c0bb3beabf6b7f3218847ec24cba5ced752@0.0.0.0:26656,834b9dacfa12f85b9b841f887d04ae55ade2482c@172.17.0.20:26656,148d010cbeb45140f190abfee435f42347d2c195@65.108.71.140:26656,ae3b7efbe5bddff191b53b769767e835c2365241@46.166.172.240:26656,644a1458bb4db8f0bfd730d5cd59356be31d7f0b@37.120.245.28:26656,f4ac31da2751d58a5c45761e092c2e326d5f3083@192.168.2.41:26656'
+custom_port_prefix: 205
+denom: ugovgen
+
+# [Optional] Snapshot
+snapshot_hour: 1
+snapshot_minute: 45
