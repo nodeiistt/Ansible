@@ -1,13 +1,13 @@
 network: cardchain
 folder: '.Cardchain'
 daemon: Cardchaind
-chain_id: cardtestnet-8
+chain_id: cardtestnet-9
 node_version: TBD
 repo: TBD
-binary: https://github.com/DecentralCardGame/Cardchain/releases/download/v0.13.0/Cardchaind
+binary: https://github.com/DecentralCardGame/Cardchain/releases/download/v0.14.1/Cardchaind
 binary_processing: default
 genesis: 'http://45.136.28.158:3000/genesis.json'
-peers: '58bb9f1dcde0408fe4c3e7f8c6ccb7f8e410ca9c@202.61.225.157:26656'
+peers: '2aa407243c982ce2d9ee607b15418cf45b5002f7@202.61.225.157:20056'
 custom_port_prefix: 200
 minimum_gas_price: '0.000ubpf'
 denom: ubpf
