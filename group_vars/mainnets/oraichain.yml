@@ -20,3 +20,4 @@ valoper: oraivaloper1h5t4s6ytd53rgxc6075kkfjlvw23gfjvjprrut
 # [Optional] Snapshot
 snapshot_hour: 0
 snapshot_minute: 30
+wasm: 'outside'
