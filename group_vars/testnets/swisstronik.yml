@@ -1,0 +1,15 @@
+network: swisstronik
+folder: '.swisstronik'
+daemon: swisstronikd
+chain_id: swisstronik_1291-1
+node_version: TBA
+binary: https://snapshot.indonode.net/swisstronik-t/swisstronikd.tar.gz
+binary_processing: targz
+genesis: https://snapshot.indonode.net/swisstronik-t/genesis.json
+peers: '7c42a55317deda257fee06bc48574fa3444967db@testnet-swisstronik.konsortech.xyz:27656'
+minimum_gas_price: '7uswtr'
+custom_port_prefix: 202
+
+# [Optional] Snapshot
+snapshot_hour: 1
+snapshot_minute: 22
