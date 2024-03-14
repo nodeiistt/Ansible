@@ -2,7 +2,7 @@ network: crossfi
 folder: '.mineplex-chain'
 daemon: crossfid
 chain_id: crossfi-evm-testnet-1
-node_version: 'v0.3.0'
+node_version: 'v0.3.0-prebuild4'
 repo: https://github.com/crossfichain/crossfi-node
 genesis: 'https://raw.githubusercontent.com/crossfichain/testnet/master/config/genesis.json'
 seeds: 'dd83e3c7c4e783f8a46dbb010ec8853135d29df0@crossfi-testnet-seed.itrocket.net:36656'
