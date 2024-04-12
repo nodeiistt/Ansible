@@ -1,7 +1,7 @@
 network: crossfi
 folder: '.mineplex-chain'
 daemon: crossfid
-chain_id: crossfi-evm-testnet-1
+chain_id: mineplex-mainnet-1
 node_version: 'v0.1.1'
 repo: https://github.com/crossfichain/crossfi-node
 binary: https://github.com/crossfichain/crossfi-node/releases/download/v0.1.1/mineplex-2-node._v0.1.1_linux_amd64.tar.gz
