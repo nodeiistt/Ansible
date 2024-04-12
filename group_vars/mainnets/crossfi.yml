@@ -1,0 +1,15 @@
+network: crossfi
+folder: '.mineplex-chain'
+daemon: crossfid
+chain_id: crossfi-evm-testnet-1
+node_version: 'v0.1.1'
+repo: https://github.com/crossfichain/crossfi-node
+binary: https://github.com/crossfichain/crossfi-node/releases/download/v0.1.1/mineplex-2-node._v0.1.1_linux_amd64.tar.gz
+binary_processing: targz
+genesis: 'https://raw.githubusercontent.com/crossfichain/mainnet/master/config/genesis.json'
+peers: '213c224347c02123b75bedf143e037559ab0e0be@192.168.1.37:26656,aedb4ff19edd4363c67f1bd9e9f40104098fe2b8@192.168.1.37:26656'
+custom_port_prefix: 101
+
+# [Optional] Snapshot
+snapshot_hour: 5
+snapshot_minute: 0
