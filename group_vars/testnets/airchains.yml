@@ -1,0 +1,17 @@
+# Custom binary build
+network: airchains
+folder: '.junction'
+daemon: junctiond
+chain_id: 'junction'
+node_version: 'TBD'
+repo: TBD
+binary: https://github.com/airchains-network/junction/releases/download/v0.1.0/junction
+binary_processing: default
+genesis: https://raw.githubusercontent.com/CoinHuntersTR/props/main/Airchains/genesis.json
+peers: 'de2e7251667dee5de5eed98e54a58749fadd23d8@34.22.237.85:26656'
+custom_port_prefix: 196
+denom: amf
+
+# [Optional] Snapshot
+snapshot_hour: 1
+snapshot_minute: 10
