@@ -1,0 +1,14 @@
+network: swisstronik
+folder: '.swisstronik'
+daemon: swisstronikd
+chain_id: swisstronik_1291-1
+node_version: 'v1.0.1'
+repo: https://github.com/SigmaGmbH/swisstronik-chain
+genesis: 'https://rpc.testnet.swisstronik.com/genesis'
+peers: '5252115ffe888beaf35e00a7bfe92f1aa4210ddb@37.59.22.150:26656,a0ef787fefc6b58bbc240bcfff429b59b2398946@141.94.240.117:26456,3cb2105b9ae008f0711ca5d2e285485b6c3ad1ec@148.113.8.228:26656,b368e2232e4cdec602c96b77505401f94a643847@148.113.1.150:17156,ae374e4f38be1e271669c5928d43c5914350a92a@57.129.1.46:26656,65148317b99e5d7bff65461eee86507546772bff@57.129.18.170:26656,388b1b8225cdeecb3a4303109a0c5d733fd55f62@141.95.98.205:26656,974bb00a5a125b475c02f9fa74bd716b1845ac24@162.19.234.136:26656,e2703da74c426f7828bb20455ce3807ffcd2fc93@37.59.30.54:26656'
+custom_port_prefix: 175
+denom: uswtr
+
+# [Optional] Snapshot
+snapshot_hour: 8
+snapshot_minute: 22
