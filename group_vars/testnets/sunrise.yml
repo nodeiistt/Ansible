@@ -1,4 +1,4 @@
-network: selfchain
+network: sunrise
 folder: '.sunrise'
 daemon: sunrised
 chain_id: 'sunrise-test-1'
