@@ -1,0 +1,14 @@
+network: selfchain
+folder: '.sunrise'
+daemon: sunrised
+chain_id: 'sunrise-test-1'
+node_version: TBD
+repo: 'https://github.com/sunriselayer/sunrise.git'
+genesis: 'https://raw.githubusercontent.com/sunriselayer/network/main/sunrise-test-1/genesis.json'
+peers: '120b994a9de2edca8d2c5631ee77cc63f9fd622a@172.31.10.54:26656,513363c604e7d40400c790ce8080d7740043ad5a@95.217.193.182:26656,5387ae41a200c28404548b6da4215e171fe9cab5@135.125.246.239:26656,b53fec5f6a2b17397535654833fe4183b503997c@10.148.0.2:26656'
+minimum_gas_price: '0urise'
+custom_port_prefix: 243
+
+# [Optional] Snapshot
+snapshot_hour: 0
+snapshot_minute: 30
