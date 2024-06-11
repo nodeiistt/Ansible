@@ -1,0 +1,15 @@
+network: nillion
+folder: '.nillionapp'
+daemon: nilchaind
+chain_id: nillion-chain-testnet-1
+node_version: v0.2.1
+repo: https://github.com/NillionNetwork/nilchain
+genesis: https://raw.githubusercontent.com/NillionNetwork/networks/main/nillion-chain-testnet-1/genesis.json
+seeds: ''
+minimum_gas_price: '0.0005unil'
+custom_port_prefix: 219
+update_website_immediately: true
+
+# [Optional] Snapshot
+snapshot_hour: 0
+snapshot_minute: 0
