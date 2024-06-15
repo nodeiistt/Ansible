@@ -1,0 +1,16 @@
+# Custom installation
+network: nubit
+folder: '.nubit-validator'
+daemon: nubit-validatord
+chain_id: 'nubit-alphatestnet-1'
+node_version: 'latest'
+repo: 'https://github.com/RiemaLabs'
+genesis: 'TBA'
+peers: '900a00a618f20a2e4867b26585b15108c728b523@35.82.227.214:26656,ab9b83c0db7b60e69e199e78a8d67f2d107e8293@144.76.202.120:34656,dcfbdaf13f1fd3b2d7b7e9eea9221324133de32a@88.198.5.77:27656,103ffa1e9a3b64cfd686793a7d49bcb4ad235067@95.216.102.121:37656,ae2ea72b4a67b678fe96e617848eb0b1401c97ce@51.68.164.101:26656,e0cf2c93177eae5cf0bb360710725aee34a44732@44.236.43.189:26656,11838e366c2676040a43efb6b4ea6e26098103e4@145.239.161.130:26656,0065ec7068f0a73e3746ce1d66ba480d3fb938d0@51.79.229.177:26656'
+minimum_gas_price: 0unub
+custom_port_prefix: 202
+denom: unub
+
+# [Optional] Snapshot
+snapshot_hour: 4
+snapshot_minute: 30
