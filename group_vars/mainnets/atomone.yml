@@ -1,0 +1,16 @@
+network: atomone
+folder: '.atomone'
+daemon: atomoned
+chain_id: atomone-1
+node_version: v1.0.0
+repo: https://github.com/atomone-hub/atomone.git
+genesis: https://files.nodeshub.online/mainnet/atomone/genesis.json
+peers: ''
+minimum_gas_price: '0atone'
+custom_port_prefix: 112
+denom: atone
+decimal: 6
+
+# [Optional] Snapshot
+snapshot_hour: 0
+snapshot_minute: 30
