@@ -1,0 +1,15 @@
+network: empeiria
+folder: '.empe-chain'
+daemon: emped
+chain_id: empe-testnet-2
+node_version: 'v0.1.0'
+repo: tba
+binary: https://github.com/empe-io/empe-chain-releases/raw/master/v0.1.0/emped_linux_amd64.tar.gz
+binary_processing: targz
+genesis: 'tba'
+seeds: ''
+custom_port_prefix: 144
+
+# [Optional] Snapshot
+snapshot_hour: 5
+snapshot_minute: 0

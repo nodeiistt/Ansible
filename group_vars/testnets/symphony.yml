@@ -1,0 +1,12 @@
+network: symphony
+folder: '.symphonyd'
+daemon: symphonyd
+chain_id: 'symphony-testnet-4'
+node_version: '0.4.1'
+repo: https://github.com/Orchestra-Labs/symphony
+custom_port_prefix: 145
+denom: note
+peers: 'b7f55e5bab70891829dbcf1feb5879e902a7fa9c@158.220.86.6:35656,683d80f56e9aad9caae030c218309b2e2cc15b7f@185.227.135.165:26656,4535bfdf160a5f86c7bcd365f92de2244bed676c@37.27.129.24:24656,e582d4ff016e1cc9e6d3da58b6473fc603f6683b@148.113.206.128:26656,7de36bd99f93ac13f55ccd3097115ce9d9ca5df5@45.94.58.14:26656'
+# [Optional] Snapshot
+snapshot_hour: 5
+snapshot_minute: 15
