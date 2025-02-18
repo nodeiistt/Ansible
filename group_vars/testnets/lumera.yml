@@ -1,0 +1,15 @@
+network: lumera
+folder: '.lumera'
+daemon: lumerad
+chain_id: lumera-testnet-1
+node_version: 'v0.4.1'
+binary: https://github.com/LumeraProtocol/lumera/releases/download/v0.4.1/lumera_v0.4.1_linux_amd64.tar.gz
+binary_processing: targz
+repo: tba
+genesis: 'https://raw.githubusercontent.com/LumeraProtocol/lumera-networks/refs/heads/master/testnet/genesis.json'
+seeds: ''
+custom_port_prefix: 219
+
+# [Optional] Snapshot
+snapshot_hour: 5
+snapshot_minute: 0
