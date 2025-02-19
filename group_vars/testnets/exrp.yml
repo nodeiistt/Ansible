@@ -1,0 +1,16 @@
+network: exrp
+folder: '.exrpd'
+daemon: exrpd
+chain_id: exrp_1440002-1
+node_version: v6.0.0
+repo: https://github.com/xrplevm/node xrpl
+genesis: https://t-ss.nodeist.net/exrp/genesis.json
+seeds: ''
+peers: 'da71733c1bb240cfdc79e59217e86d51aa2a5544@evm-poa-validator-1.peersyst.tech:26656,86b5634d5779956b61d0ad3b3f42d3053613eace@evm-poa-validator-2.peersyst.tech:26656,75c2d2f6a0ecc6554a5f22d6ef81198db112b329@evm-poa-validator-3.peersyst.tech:26656'
+minimum_gas_price: '0.0axrp'
+custom_port_prefix: 293
+update_website_immediately: true
+
+# [Optional] Snapshot
+snapshot_hour: 0
+snapshot_minute: 0
