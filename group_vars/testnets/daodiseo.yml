@@ -1,0 +1,14 @@
+network: daodiseo
+folder: '.achilles'
+daemon: achillesd
+chain_id: test-core-1
+node_version: TBD
+repo: https://github.com/daodiseomoney/Achilles
+genesis: 'https://t-ss.nodeist.net/daodiseo/genesis.json'
+peers: ''
+custom_port_prefix: 167
+denom: uodis
+
+# [Optional] Snapshot
+snapshot_hour: 11
+snapshot_minute: 15
