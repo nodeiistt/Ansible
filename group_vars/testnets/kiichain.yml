@@ -1,0 +1,16 @@
+network: kiichain
+folder: '.kiichain3'
+daemon: kiichaind
+chain_id: kiichain3
+node_version: v2.0.0
+repo: https://github.com/KiiChain/kiichain.git
+genesis: https://t-ss.nodeist.net/kiichain/genesis.json
+peers: '5e6b283c8879e8d1b0866bda20949f9886aff967@dos.sentry.testnet.v3.kiivalidator.com:26656,0fe12600961ab22df47e433418403ea5d492dcd7@172.31.10.28:26656,5b6aa55124c0fd28e47d7da091a69973964a9fe1@p2p.uno.sentry.testnet.v3.kiivalidator.com,83cf42529a500abe37fc6e6b65573cf038ea287d@172.31.1.237:26656,837fc0b53b4d045b8aaf9e89566af63f3a46b60d@149.50.96.91:37656,41738a0c881866cd0810dbf5918dfd9f4736d39d@167.235.101.159:26656'
+minimum_gas_price: '0.02ukii'
+custom_port_prefix: 299
+upgrade_folder: v2.0.0
+
+# [Optional] Snapshot
+snapshot_hour: 1
+snapshot_minute: 0
+wasm: 'outside'
