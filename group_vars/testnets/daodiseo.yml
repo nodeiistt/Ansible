@@ -1,7 +1,7 @@
 network: daodiseo
 folder: '.achilles'
 daemon: achillesd
-chain_id: test-core-1
+chain_id: ithaca-1
 node_version: TBD
 repo: https://github.com/daodiseomoney/Achilles
 genesis: 'https://t-ss.nodeist.net/daodiseo/genesis.json'
