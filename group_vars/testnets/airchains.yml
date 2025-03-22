@@ -2,7 +2,7 @@
 network: airchains
 folder: '.junction'
 daemon: junctiond
-chain_id: 'junction'
+chain_id: 'varanasi-1'
 node_version: 'TBD'
 repo: TBD
 binary: https://github.com/airchains-network/junction/releases/download/v0.3.1/junctiond-linux-amd64
